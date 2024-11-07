@@ -452,6 +452,7 @@ nav {
     display: none;
     background-size: cover;
     background-position: center;
+    pointer-events: none;
 }
 
 .project-button {
@@ -516,25 +517,50 @@ nav {
     height: 80vh;
     width: 100%;
     background-color: #efeae3;
+
 }
 
+.sec{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    padding: 0 6vw;
+    top: 12%;
+}
+.gola{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #FE320A;
+}
+.sec2 h3{
+    text-transform: uppercase;
+    font-family: neu;
+    font-size: 0.9vw;
+    
+}
 
 
 .swiper {
     width: 100%;
     height: 100%;
-    padding: 8vw 3vw;
+    padding: 8vw 6vw;
 }
 
 .swiper-slide {
     font-size: 18px;
     position: relative;
-    border-left: 3px solid #9f9f9fc2;
+    border-left: 1px solid #a39e9783;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    width: 25%;
-    height: 38vh;
+    width: 21%;
+    height: 86%;
+    padding: 0 1.5vw;
+    gap: 20px;
+    text-align: left
 }
 
 /* .swiper-slide img {
@@ -544,20 +570,15 @@ nav {
     object-fit: cover;
 } */
 
-.swiper-slide h3 {
-    font-size: 1.8vw;
-    padding: 1vw 3vw;
-    font-family: neu2;
-    letter-spacing: 4px;
+.swiper-slide img {
+    width: 10vw;
 
 }
 
 .swiper-slide p {
     font-size: 1vw;
-    padding: 1vw 3vw;
-    margin-bottom: 2vw;
-    font-family: neu;
-    font-weight: 300;
+    font-family: neu2;
+    /* width: 70%; */
 }
 
 
@@ -636,14 +657,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3vw;
+    padding: 0 0vw;
 }
 
 .footer-bottom h3 {
-    font-family: neu;
+    font-family: neu2;
     font-weight: 100;
-    font-size: 1vw;
-    color: #ffffffad;
+    font-size: 1.10vw;
+    color: #ffffffed;
 }
 
 .footer-shape {
