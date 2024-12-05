@@ -22,6 +22,20 @@
     /* background-color: #efeae3; */
 
 }
+::-webkit-scrollbar{
+    display: none;
+}
+/* ::-webkit-scrollbar{
+    background-color: #efeae3;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FE320A;
+    border-radius: 50px;
+} */
+html{
+   scroll-behavior:smooth !important;
+}
 
 html,
 body {
@@ -116,7 +130,7 @@ nav {
     padding-right: 1.3vw;
 }
 
-.nav-part2 h4 {
+.nav-part2 a {
     padding: 12px 20px;
     border: 1px solid #0000003c;
     border-radius: 50px;
@@ -125,7 +139,7 @@ nav {
     overflow: hidden;
 }
 
-.nav-part2 h4::after {
+.nav-part2 a::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -138,21 +152,23 @@ nav {
 
 }
 
-.nav-part2 h4:hover::after {
+.nav-part2 a:hover::after {
     bottom: 0;
     border-radius: 0;
 }
 
-.nav-part2 h4 a {
-    text-decoration: none;
+.nav-part2 a h4 {
     color: #000000;
     position: relative;
     font-family: neu2;
     font-size: 1vw;
     z-index: 9;
 }
+.nav-part2 a{
+    text-decoration: none;
+}
 
-.nav-part2 h4:hover a {
+.nav-part2 a:hover h4 {
     color: #fff;
 }
 
@@ -620,17 +636,31 @@ nav {
 }
 
 .left-footer h3 a {
-    font-size: 2vw;
+    font-size: 1.3vw;
     text-decoration: none;
-    color: #fff;
+    color: #ffffffdd;
     font-family: neu2;
-    font-weight: 600;
-    word-spacing: 0vw;
+    font-weight: 500;
+    /* word-spacing: 1vw; */
+    letter-spacing: 2.8px;
 }
 
-.left-footer h3 a:hover {
+/* .left-footer h3 a:hover {
     color: #ffffffad;
+} */
+.left-footer h4{
+    font-family: neu2;
+    font-weight: 600;
+    /* margin-left: 2vw; */
+    font-size: 2vw;
+    padding: 0.3vw 0;
+    letter-spacing: 2px;
 }
+ /* .left-footer h3 a span{
+    font-family: neu2;
+    font-weight: 100;
+    font-size: 2vw;
+ } */
 
 .right-footer h4 {
     font-family: neu2;
@@ -639,12 +669,13 @@ nav {
 }
 
 .right-footer p {
-    margin-top: 2vw;
+    margin-top: 1.5vw;
     font-family: neu2;
     font-size: 1vw;
-    color: #ffffffad;
+    color: #ffffffdd;
     border-bottom: 1px solid #ffffffad;
     padding-bottom: 0.70vw;
+    letter-spacing: 0.4px;
 
 }
 
